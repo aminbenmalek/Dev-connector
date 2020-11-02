@@ -1,0 +1,7 @@
+{
+    "mongoURI": "mongodb+srv://amin123:amin123@devconnector.n5pmo.mongodb.net/DevConnector?retryWrites=true&w=majority",
+    "jwtSecret": "mysecretToken",
+    "githubClient": "2cab56ea7698a20b8fbd",
+    "githubSecret": "0d7d23f61761eb29da6f2c59ad666d083a36677d"
+  }
+  

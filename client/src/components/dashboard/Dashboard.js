@@ -9,14 +9,14 @@ import Education from './Education'
 import DashboardActions from './DashboardActions'
 
 
-const Dashboard = ({profile:{profile,loading},getCurrentProfile,auth,deleteAccount}) => {
+const Dashboard = ({profile:{profile,loading},getCurrentProfile,auth:{user},deleteAccount}) => {
     useEffect(() => {
         getCurrentProfile()
     }, [])
     return (loading && profile === null ? <Spinner /> : <Fragment>
     <h1 className="large text-primary">Dashboard</h1>
     <p className="lead">
-        <i className="fa fa-user"></i>Welcome {auth.user.name}
+        <i className="fa fa-user"></i>Welcome { user?.name}
     </p>
     {profile !== null ? <Fragment><DashboardActions /><Experience experience={profile.experience} /><Education education={profile.education} />
     <div className="my-2">
